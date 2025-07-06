@@ -65,9 +65,9 @@ cd modern-mern-template
 
 ### 2. Setup Environment Variables
 
-Create a `.env.production` file in both `client/` and `server/` using the provided `.env.development`.
+Create a `.env.production` and `.env.development` file in both `client/` and `server/` using the below provided example.
 
-#### Frontend (`client/.env`)
+#### Frontend (`client/.env.development`)
 
 ```env
 VITE_BASE_URL=http://localhost:3001
@@ -75,7 +75,7 @@ VITE_FILES_URL= # base url where your files are hosted eg. https://subdomain.dom
 VITE_GOOGLE_OAUTH_CLIENT_ID= # google oauth client id you get from google
 ```
 
-#### Backend (`server/.env`)
+#### Backend (`server/.env.development`)
 
 ```env
 MONGODB_URL=# mongodb uri
