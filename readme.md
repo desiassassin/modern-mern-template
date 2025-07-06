@@ -65,9 +65,9 @@ cd modern-mern-template
 
 ### 2. Setup Environment Variables
 
-Create a `.env.production` and `.env.development` file in both `client/` and `server/` using the below provided example.
+Create a `.env` file in both `client/` and `server/` using the below provided example.
 
-#### Frontend (`client/.env.development`)
+#### Frontend (`client/.env`)
 
 ```env
 VITE_BASE_URL=http://localhost:3001
@@ -75,9 +75,10 @@ VITE_FILES_URL= # base url where your files are hosted eg. https://subdomain.dom
 VITE_GOOGLE_OAUTH_CLIENT_ID= # google oauth client id you get from google
 ```
 
-#### Backend (`server/.env.development`)
+#### Backend (`server/.env`)
 
 ```env
+NODE_ENV=production|development
 MONGODB_URL=# mongodb uri
 REDIS_URL=# redis uri
 ACCESS_TOKEN_SECRET=# a secure 256bit secret
@@ -138,8 +139,8 @@ npm run dev
 
 ```json
 "scripts": {
-  "dev": "cross-env NODE_ENV=development nodemon server.js",
-  "start": "cross-env NODE_ENV=production node server.js"
+  "dev": "nodemon server.js",
+  "start": "node server.js"
 }
 ```
 

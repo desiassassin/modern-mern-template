@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+dotenv.config();
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import express from "express";

@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+dotenv.config();
 
 export const AUTH_COOKIE_NAME = "authorization";
 
