@@ -1,0 +1,23 @@
+{
+     "name": "rent-manager-app",
+     "version": "1.0.0",
+     "description": "Rent Manager App created by Arun Kumar Sehrawat as a personal project.",
+     "main": "index.js",
+     "scripts": {
+          "client": "cd client && serve -s dist",
+          "server": "cd server && npm start",
+          "start": "concurrently \"npm run client\" \"npm run server\"",
+          "devStart": "concurrently \"cd client && npm start\" \"cd server && npm run devStart\""
+     },
+     "repository": {
+          "type": "git",
+          "url": "git+https://github.com/desiassassin/rent-manager-app.git"
+     },
+     "keywords": [],
+     "author": "",
+     "license": "ISC",
+     "bugs": {
+          "url": "https://github.com/desiassassin/rent-manager-app/issues"
+     },
+     "homepage": "https://github.com/desiassassin/rent-manager-app#readme"
+}

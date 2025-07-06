@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:disabled,
+*.disabled {
+     pointer-events: all !important;
+     cursor: not-allowed !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+     -moz-appearance: textfield;
+}
